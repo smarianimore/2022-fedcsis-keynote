@@ -1,6 +1,6 @@
 # READ ME
 
-Talk *'An Adaptive Approach for the Coordination of Autonomous Vehicles at Intersections'* given by [Stefano Mariani](https://smarianimore.github.io) at [WETICE 2021](http://eexposit.perso.univ-pau.fr/wetice/)
+Talk *'Individual and collective self-development'* given by [Stefano Mariani](https://smarianimore.github.io) on behalf of Prof. [Franco Zambonelli](http://www.agentgroup.unimore.it/Zambonelli/) at [FedCSIS 2022](https://fedcsis.org/2022/keynotes/zambonelli)
 
 # Credits
 
