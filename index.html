@@ -8,7 +8,7 @@
     />
 
     <title>Adaptive Intersections @ WETICE 2021</title>
-    <meta content="Talk 'An Adaptive Approach for the Coordination of Autonomous Vehicles at Intersections' given by Stefano Mariani at WETICE 2021" name="description">
+    <meta content="Talk 'Individual and collective self-development' given by Stefano Mariani on behalf of Prof. Franco Zambonelli at FedCSIS 2022" name="description">
     <meta content="Stefano Mariani" name="author">
 
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -39,74 +39,156 @@
     <div class="reveal">
       <div class="slides">
 
-        <section data-transition="convex" data-background-image="wetice.png" data-background-opacity=0.25 data-background-size="cover">
-          <p><small> ACEC @ WETICE, 27/10/2021 </small></p>
+        <section data-transition="convex" data-background-image="res/img/FedCSIS-twitter.jpeg" data-background-opacity=0.15 data-background-size="contain">
+          <p><small> FedCSIS @ Sofia, 5/9/2022 </small></p>
           <hr>
-          <h3> An Adaptive Approach for the Coordination of Autonomous Vehicles at Intersections </h3>
+          <h2> Individual and collective self-development </h2>
           <hr>
-          <p> Nicholas Glorio, <a href="https://smarianimore.github.io">Stefano Mariani</a>, Giacomo Cabri, Franco Zambonelli </p>
+          <p> Marco Lippi, <a href="https://smarianimore.github.io">Stefano Mariani</a>, Matteo Martinelli, <strong>Franco Zambonelli</strong> </p>
           <hr>
-          <p><small><em> Università di Modena e Reggio Emilia </em></small></p>
+          <p><small><em> University of Modena and Reggio Emilia </em></small></p>
         </section>
 
-        <section data-transition="convex" data-background-image="coop-driving.jpeg" data-background-opacity=0.15 data-background-size="cover">
-          <h3> Motivation & Goal </h3>
-          <hr>
-          <ul>
-            <li> current research on self-driving mostly about <em>individual</em> vehicles </li>
-            <div class="fragment">
-              <li> but <em>cooperative driving</em> is necessary for collective vehicles in many situations </li>
-              <ul>
-                <li> e.g. crossing intersections </li>
-              </ul>
-            </div>
-            <div class="fragment">
-              <li> hence we study <strong>intersection management</strong> </li>
-              <ul>
-                <li> <strong>compare</strong> state of art approaches </li>
-                <li> propose <strong>adaptive</strong> approach </li>
-              </ul>
-            </div>
-          </ul>
+        <section data-transition="convex">
+          <section data-transition="slide" data-background-image="res/img/motivation.jpg" data-background-opacity=0.15 data-background-size="contain">
+          <!--<section data-transition="convex" data-background-image="res/img/self-dev.jpg" data-background-opacity=0.15 data-background-size="contain">-->
+            <h3> Motivation</h3>
+            <hr>
+            <ul>
+              <li> complexity and unpredictability of deployment scenarios </li>
+              <li> need <strong>learn</strong> how to act and adapt with <em>little or no a priori knowledge</em> </li>
+              <li> at the individual and collective level </li>
+            </ul>
+          </section>
+          <section data-transition="slide" data-background-image="res/img/goal.jpg" data-background-opacity=0.15 data-background-size="contain">
+            <!--<section data-transition="convex" data-background-image="res/img/self-dev.jpg" data-background-opacity=0.15 data-background-size="contain">-->
+            <h3> Goal</h3>
+            <hr>
+            <p> <em>become able to autonomously (i.e., <strong>self-) develop models</strong> of themselves and the environment (including others)</em> </p>
+          </section>
+
+        <!--<section data-transition="convex" data-background-image="res/img/toddler.jpg" data-background-opacity=0.15 data-background-size="contain">-->
+          <section data-transition="slide" data-background-image="res/img/self-dev.jpg" data-background-opacity=0.15 data-background-size="contain">
+            <h3> On self-development </h3>
+            <hr>
+            <ul>
+              <li> toddlers touch (lick 😅) objects, interact with people, etc. </li>
+              <li> you click buttons, try actions, and explore objects when starting a new videogame </li>
+            </ul>
+            <p> <em>this is part of a <strong>self-development</strong> (aka autonomous mental dev.) <strong>process</strong> to acquire and improve cognitive and behavioural capabilities</em> </p>
+          </section>
+          <section data-transition="slide" data-background-image="res/img/self-dev.jpg" data-background-opacity=0.15 data-background-size="contain">
+            <ul>
+              <li> recognize situations </li>
+              <li> the sense of self </li>
+              <li> the <strong>sense of agency</strong> (i.e., understanding effect of own actions) </li>
+              <li> act purposefully towards a goal </li>
+              <li> cooperate/compete with others </li>
+            </ul>
+          </section>
+          <section data-transition="slide" data-background-image="res/img/matrix.jpg" data-background-opacity=0.15 data-background-size="contain">
+            <h3> In ICT </h3>
+            <hr>
+            <p> for small-scale, static, and/or simple scenarios/tasks it is possible "hardwire" a model </p>
+            <p> otherwise software has to: </p>
+            <ul>
+              <li> build models and update them </li>
+              <li> recognise effect of own actions in (novel) context </li>
+              <li> learn to achieve goals in (novel) context </li>
+              <li> learn to cooperate/compete with others </li>
+            </ul>
+            <p> <em>that is, to <strong>self-develop</strong> :)</em> </p>
+          </section>
         </section>
 
-        <section data-transition="convex" data-background-image="coop-driving.jpeg" data-background-opacity=0.15 data-background-size="cover">
+        <section data-transition="convex" data-background-image="res/img/contribution.jpg" data-background-opacity=0.15 data-background-size="contain">
           <section data-transition="slide">
-            <h3> Intersection crossing: problem </h3>
+            <h3> Contribution </h3>
             <hr>
             <ul>
-              <li> decision making process orchestrating vehicles' actions </li>
-              <ul>
-                <li> <strong>necessary</strong> to achieve own goal </li>
-                <li> <em>competitive</em> access to <em>shared</em> resource </li>
-              </ul>
-              <li class="fragment"> poses 3 challenges </li>
-              <ul>
-                <li class="fragment"> <em>safety</em>: no collisions </li>
-                <li class="fragment"> <em>liveness</em>: right of way for everyone </li>
-                <li class="fragment"> <em>quality</em>: max./min. throughput/delay </li>
-              </ul>
+              <li> conceptual framework of self-development in ICT systems </li>
+              <li> suitable application domains </li>
+              <li> research areas as building blocks </li>
+              <li> promising early results </li>
+              <li> key research challenges </li>
             </ul>
           </section>
+        </section>
+
+        <section data-transition="convex"> <!--data-background-image="res/img/contribution.jpg" data-background-opacity=0.15 data-background-size="contain">-->
           <section data-transition="slide">
-            <h3> Intersection crossing: solutions </h3>
+            <h3> Conceptual framework </h3>
+            <hr>
+            <img width="125%" height="125%" data-src="res/img/framework.png">
+
+                  <!--<li> through embodiment and perception an agent tries to interact... </li>
+                  <li> ...to learn the effect of own actions so as to acquire the sense of agency </li>
+                  <li> then it can start behaving in a goal-oriented way </li>
+                  <li> the agent also learns to recognize the self and
+                    non-self... </li>
+                  <li> ...so as to develop strategic thinking (i.e. take into account others' actions)... </li>
+                  <li> ...and understand whether it can communicate with others... </li>
+                  <li> ...to either cooperate or compete </li>
+                  <li> such coordination knowledge may then become institutionalized for others to adopt </li>-->
+
+          </section>
+          <section data-transition="slide" data-background-image="res/img/individual.jpg" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Individual level </h3>
             <hr>
             <ul>
-              <li> <em>today</em>: traffic light, precedence rules </li>
-              <ul>
-                <li> safe & inefficient </li>
-                <li> efficient & unsafe </li>
-              </ul>
-              <div class="fragment">
-                <li> <em>tomorrow</em>: thanks to V2I / V2V </li>
-                <ul>
-                  <li> reservation </li>
-                  <li> negotiation (e.g. auction) </li>
-                  <li> others (e.g. DCOP, game-theoretic, self-org) </li>
-                </ul>
-              </div>
+              <li> <strong>embodiment</strong> and <strong>perception</strong>: recognize available observations $O$ and actions $A$, i.e. get acknowledged of its
+                actuating and sensing skills, and their relationships </li>
+              <li> <strong>sense of agency</strong>: understand the (causal) effects of $A$ on $O$ </li>
+              <li> <strong>goal-orientedness</strong>: learn the required sequence of $a_i \in A$ to achieve a specific goal $g$ </li>
             </ul>
           </section>
+          <section data-transition="slide" data-background-image="res/img/boundary.png" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Individual-Collective boundary </h3>
+            <hr>
+            <ul>
+              <li> <strong>self/non-self</strong>: become aware of other agents $J$ affecting $O$ </li>
+              <li> <strong>strategic thinking</strong>: understand effects of $J$ on $O$ and exploit them for own $g$ </li>
+            </ul>
+          </section>
+          <section data-transition="slide" data-background-image="res/img/collective.png" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Collective level </h3>
+            <hr>
+            <ul>
+              <li> <strong>communication</strong>: understand how/when to send and receive which messages $M$, as a form of social action/perception </li>
+              <li> <strong>coordination</strong>: recognize how $M$ affect $J$ and in turn $O$, as a form of social sense of agency </li>
+              <li> <strong>institution</strong>: learn which sequence of $m_i \in M$ to which $j_i \in J$ achieves collective goal $g$ </li>
+            </ul>
+          </section>
+        </section>
+
+        <section data-transition="convex">
+          <section data-transition="slide" data-background-image="res/img/applications.jpg" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Application scenarios </h3>
+            <hr>
+
+          </section>
+          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Robotics </h3>
+            <hr>
+
+          </section>
+          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Smart buildings </h3>
+            <hr>
+
+          </section>
+          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Smart factories </h3>
+            <hr>
+
+          </section>
+          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+            <h3> Smart cities </h3>
+            <hr>
+
+          </section>
+        </section>
+
           <section data-transition="slide">
             <h3> Selected approaches </h3>
             <hr>
