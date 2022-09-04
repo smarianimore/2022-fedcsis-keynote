@@ -75,7 +75,7 @@
               <li> toddlers touch (lick 😅) objects, interact with people, etc. </li>
               <li> you click buttons, try actions, and explore objects when starting a new videogame </li>
             </ul>
-            <p> <em>this is part of a <strong>self-development</strong> (aka autonomous mental dev.) <strong>process</strong> to acquire and improve cognitive and behavioural capabilities</em> </p>
+            <p> <em>this is part of a <strong>self-development</strong> (aka autonomous mental dev) <strong>process</strong> to acquire and improve cognitive and behavioural capabilities</em> </p>
           </section>
           <section data-transition="slide" data-background-image="res/img/self-dev.jpg" data-background-opacity=0.15 data-background-size="contain">
             <ul>
@@ -85,6 +85,7 @@
               <li> act purposefully towards a goal </li>
               <li> cooperate/compete with others </li>
             </ul>
+            <hr>
           </section>
           <section data-transition="slide" data-background-image="res/img/matrix.jpg" data-background-opacity=0.15 data-background-size="contain">
             <h3> In ICT </h3>
@@ -163,29 +164,151 @@
 
         <section data-transition="convex">
           <section data-transition="slide" data-background-image="res/img/applications.jpg" data-background-opacity=0.15 data-background-size="contain">
-            <h3> Application scenarios </h3>
-            <hr>
+            <h3> Application domains </h3>
 
           </section>
-          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide" data-background-image="res/img/robotics.jpg" data-background-opacity=0.15 data-background-size="contain">
             <h3> Robotics </h3>
             <hr>
-
+            <ul>
+              <li> robots with some nuance of individual self-dev are already a thing </li>
+              <small><ul>
+                <li> e.g. Simultaneous Location and Mapping (SLAM) </li>
+                <li> e.g. estimate residual capabilities after fault or damage </li>
+              </ul></small>
+              <li> the collective level is less established but growing (swarm robotics [1]) </li>
+            </ul>
+            <p style="color:grey"><small><small><em> [1] N. Cambier et al.: "Language evolution in swarm robotics: A perspective" Frontiers in Robotics and AI, vol. 7, p. 12, 2020 </em></small></small></p>
           </section>
-          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide" data-background-image="res/img/smart-building.jpg" data-background-opacity=0.15 data-background-size="contain">
             <h3> Smart buildings </h3>
             <hr>
-
+            <p> who is still dreaming of a truly smart home/office/building? 🙋 [2] </p>
+            <small><ul>
+              <li> saying "I'm tired" when coming home $\rightarrow$ lights down, lounge music plays, tha bathtube starts filling </li>
+              <li> saying "lab meeting in 5 mins" in a meeting room $\rightarrow$ widescreen turns on, as lights do, and the coffee machine warms up </li>
+              <li> all with zero configuration? </li>
+            </ul></small>
+            <p> devices become truly smart when they learn a model of environment to exploit for goals [3,4] </p>
+            <p style="color:grey"><small><small><em> [2] F. Zambonelli et al.: "Coordinating Distributed Speaking Objects" ICDCS 2017: 1949-1960 <br>
+              [3] F. Zambonelli et al.: "Developing a sense of agency in IoT systems: Preliminary experiments in a smart home scenario" 17th CoMoRea workshop at PerCom. IEEE, 2021 <br>
+              [4] K. Fadiga et al.: "To do or not to do: finding causal relations in smart homes" ACSOS 2021: 110-119
+            </em></small></small></p>
           </section>
-          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide" data-background-image="res/img/smart-factory.jpg" data-background-opacity=0.15 data-background-size="contain">
             <h3> Smart factories </h3>
             <hr>
-
+            <p> adaptability and flexibility are key concerns for industry 4.0 [5] </p>
+            <ul>
+              <li> self-configuration when re-deploying machinery in new environment </li>
+              <li> re-planning production line after fault or if new equipment joins </li>
+            </ul>
+            <p> high-fidelity simulation (Digital Twins?) mandatory to learn in a safe environment! </p>
+            <p style="color:grey"><small><small><em> [5] J. Zhang et al.: "Self-organizing manufacturing: Current status and prospect for industry 4.0" 5th International Conference on Enterprise Systems, 2017, pp. 319–326 </em></small></small></p>
           </section>
-          <section data-transition="slide" data-background-image="res/img/" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide" data-background-image="res/img/smart-ciy.jpg" data-background-opacity=0.15 data-background-size="contain">
             <h3> Smart cities </h3>
             <hr>
+            <ul>
+              <li> natural scale-up from buildings and factories, similar issues </li>
+              <li> many scenarios </li>
+              <small><ul>
+                <li> smart mobility </li>
+                <li> smart energy grids </li>
+                <li> cooperative driving [6] </li>
+                <li> ... </li>
+              </ul></small>
+              <li> learning in a simulated environment even more critical to avoid damage! </li>
+            </ul>
+            <p style="color:grey"><small><small><em> [6] F. Zambonelli et al.: "An Adaptive Approach for the Coordination of Autonomous Vehicles at Intersections" WETICE 2021: 1-6 </em></small></small></p>
+          </section>
+        </section>
 
+        <section data-transition="convex">
+          <section data-transition="slide">
+            <h3> Building blocks </h3>
+            <hr>
+            <img width="100%" height="100%" data-src="res/img/research-landscape.png">
+          </section>
+          <section data-transition="slide">
+            <p> We take for granted the <strong>basics</strong> of individual self-development,
+              i.e., <em>perception and embodiment</em>,
+              as tools already exist to give software agents
+              sophisticated <strong>sensing and actuation</strong> capabilities
+              (e.g., CNNs to recognize objects, scenes, etc.)</p>
+            <hr>
+          </section>
+        </section>
+
+        <section data-transition="convex" data-background-image="res/img/goal-orientedness.jpg" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide">
+            <h3> Goal-orientedness </h3>
+            <hr>
+            <p> <strong>RL</strong> and <strong>MARL</strong> are making huge headlines
+              and roughly resemble the whole idea of self-dev </p>
+            <p> ...but rarely build <span class="fragment highlight-red">explicit (causal?) models</span> of the world
+              hence are limited in </p>
+            <small><ul>
+              <li> learning in highly non-stationary envs </li>
+              <li> multi-task learning </li>
+              <li> cross-domain learning </li>
+              <li> transfer learning </li>
+              <li> generalisation power </li>
+            </ul></small>
+          </section>
+          <section data-transition="slide">
+            <p> <strong>curriculum learning</strong> better resembles the self-dev process </p>
+            <ul>
+              <li> the agent is first trained on simple tasks </li>
+              <li> learnt expertise is exploited in increasingly complex tasks/scenarios </li>
+              <li> "higher" skills are learnt exploiting "lower" skills, not from scratch </li>
+              <li> still mostly not building explicit models </li>
+            </ul>
+          </section>
+          <section data-transition="slide">
+            <p> research on <strong>intrinsic motivations</strong> is similar, too </p>
+            <ul>
+              <li> extrinsic motivations (most of RL) are designed by an "oracle" (the scientist) </li>
+              <li> intrinsic motivations are made up by agents themselves </li>
+              <li> agents thus learn (at first) out of exploration and curiosity </li>
+            </ul>
+            <hr>
+          </section>
+        </section>
+
+        <section data-transition="convex" data-background-image="res/img/causality.png" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide">
+            <h3> Causal models </h3>
+            <hr>
+            <p> Understanding and leveraging (the ladder of) <strong>causality</strong> is recognized as a key for <strong>general AI</strong> </p>
+            <ul>
+              <li> <em>association</em>: not yet causation, but correlation </li>
+              <li> <em>intervention</em>: tell causes apart from effects (e.g. predict consequences of actions) </li>
+              <li> <em>counterfactual</em>: reasoning on alternative realities (e.g. "what-if" analysis)</li>
+            </ul>
+          </section>
+          <section data-transition="slide">
+            <ul>
+              <li> association $\leftrightarrow$ embodiment and perception </li>
+              <li> intervention $\leftrightarrow$ sense of agency, self and non-self </li>
+              <li> counterfactual $\leftrightarrow$ goal-orientedness, strategic thinking, coordination </li>
+            </ul>
+            <p> <em>most of mainstream machine learning research doesn't go beyond the level of association!</em> [7,8] </p>
+            <p style="color:grey"><small><small><em> [7] J. Pearl: "The seven tools of causal inference, with reflections on machine learning" CACM 62(3): 54-60 (2019) <br>
+              [8] B. Schölkopf et al.: "Toward Causal Representation Learning" Proceedings IEEE 109(5): 612-634 (2021) </em></small></small></p>
+          </section>
+        </section>
+
+        <section data-transition="convex" data-background-image="res/img/autocurricula.png" data-background-opacity=0.15 data-background-size="contain">
+          <section data-transition="slide">
+            <h3> Autocurricula </h3>
+            <hr>
+            <ul>
+              <li> multi-agent learning setting, social interactions </li>
+              <li> the more one agent learns, the more it challenges others </li>
+              <li> continuous increase in learning task complexity </li>
+              <li> incremental (curriculum) learning triggered by social interactions (<em>auto</em>)</li>
+            </ul>
           </section>
         </section>
 
